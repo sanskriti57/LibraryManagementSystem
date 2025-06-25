@@ -109,8 +109,8 @@ public class DashboardFrame extends JFrame {
         try {
             List<Transaction> list = transactionDAO.getAllTransactions();
             StringBuilder sb = new StringBuilder();
-            sb.append("ID\tUserID\tBookID\tIssue\tDue\tReturn\n");
-            sb.append("--------------------------------------------------\n");
+            sb.append("ID\tUserID\tBookID\tIssue\t\tDue\t\tReturn\n");
+            sb.append("---------------------------------------------------------------------\n");
             for (Transaction t : list) {
                 sb.append(t.getId()).append("\t")
                   .append(t.getUserId()).append("\t")
